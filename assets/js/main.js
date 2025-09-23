@@ -30,3 +30,10 @@
 		$('.scrolly').scrolly();
 
 })(jQuery);
+
+function goToPage(url) {
+  document.body.classList.add('fade-out');
+  setTimeout(() => {
+    window.location.href = url;
+  }, 200);
+}

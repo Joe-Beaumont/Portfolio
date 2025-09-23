@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NC_News</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body>
+            <!-- Header  -->
+             <section id="header">
+                <div class="inner">
+                    <h1>NC_News</h1>
+                    <p>A news app where users can share articles on specific topics, comments can be posted under each article and voting is featured</p>
+                </div>
+             </section>
+             <nav>
+                <button class="button" onclick="window.location.href='index.html'">Back</button>   
+             </nav>
+             <br />
+             <section id="body">
+                <div class="carousel">
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <img src="images/NcNews1.png" class="carousel-img active">
+                    <img src="images/NcNews2.png" class="carousel-img">
+                    <img src="images/NcNews3.png" class="carousel-img">
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+                <div class="inner">
+                    <p>Built using React.js, Tailwind CSS and used React Router for navigation to different areas of the site. API developed in Node.js</p>
+                </div>
+             </section>
+    </body>
+</html>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-img');
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+  }
+
+  // Show first slide on load
+  showSlide(currentSlide);
+</script>

@@ -2057,6 +2057,7 @@ input, select, textarea {
 	header.special {
 		text-align: center;
 	}
+	
 
 /* Form */
 
@@ -2393,6 +2394,48 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
+	.profileImage {
+		height: 400px;
+		width: auto;
+		display: block;
+		margin: 0 auto;
+	}
+
+	/* Carousel */
+
+	.carousel {
+	position: relative;
+	width: 400px;       /* adjust to your liking */
+	margin: auto;
+	overflow: hidden;
+	}
+
+	.carousel-img {
+	display: none;
+	width: 100%;
+	height: auto;
+	}
+
+	.carousel-img.active {
+	display: block;
+	}
+
+	.carousel button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0,0,0,0.5);
+	border: none;
+	color: white;
+	font-size: 24px;
+	padding: 10px;
+	cursor: pointer;
+	}
+
+	.carousel .prev { left: 10px; }
+	.carousel .next { right: 10px; }
+
 
 /* List */
 
@@ -3104,6 +3147,15 @@ input, select, textarea {
 
 	body.is-preload #header:after {
 		opacity: 1;
+	}
+
+	body {
+		transition: opacity 0.5s ease;
+		opacity: 1;
+	}
+
+	body.fade-out {
+		opacity: 0;
 	}
 
 /* Footer */
