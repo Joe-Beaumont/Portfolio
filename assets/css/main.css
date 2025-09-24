@@ -2467,6 +2467,7 @@ input, select, textarea {
 		max-height: 500px;
 		object-fit: contain;
 		display: none;  
+		padding-bottom: 20px;
 	}
 
 	.carousel-img.active {
