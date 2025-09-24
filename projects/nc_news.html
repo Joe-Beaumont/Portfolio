@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NC_News</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    </head>
+    <body>
+        <!-- Header  -->
+            <section id="header">
+            <div class="inner">
+                <h1>NC_News</h1>
+                <p>A news app built using React.js, Tailwind CSS and used React Router for navigation to different areas of the site. API developed in Node.js</p>
+            </section>
+            <!-- Navigation -->
+            <nav>
+            <button class="button" onclick="window.location.href='../index.html'">Back</button>   
+            </nav>
+            <br />
+            <!-- Body -->
+            <section id="body">
+            <div class="carousel">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <img src="../images/NcNews1.png" class="carousel-img active">
+                <img src="../images/NcNews2.png" class="carousel-img">
+                <img src="../images/NcNews3.png" class="carousel-img">
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <div class="body">
+                <p>NC_News was created in two parts.</p>
+                <h3>Back-End</h3>
+                <p>I began by building the database in PostgreSQL and creating a seed script to populate the database whilst practicing TDD using Jest and SuperTest.</p>
+                <p>I knew the CRUD endpoints and queries I wanted the user to be able to access as part of an MVP so I built the API using express and started building model and controller functions to achieve this.</p>
+                <p>Probably the biggest challenge I had when creating the back-end was tackling the error-handling middleware, but eventually I was able to incorporate functions that handled any reasonable errors a user might encounter.</p>
+                <p>Finally I refactored my code to use express.Router as it resulted in much drier code.</p>
+                <h3>Front-End</h3>
+                <p>The front-end was created using React.js with Axios iteracting with the API.</p>
+                <p>After I'd gathered some more experience working on my other projects I revisited NC_News and adopted tailwind.css with my main focus being creating a responsive design.</p>
+            </div>
+            </section>
+    </body>
+</html>
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/carousel.js"></script>

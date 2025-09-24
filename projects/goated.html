@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Goated</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    </head>
+    <body>
+        <!-- Header  -->
+            <section id="header">
+            <div class="inner">
+                <h1>Goated</h1>
+                <p>A React Native App which uses web-sockets to create rooms where friends can compete against each other in a bouldering based game.​</p>
+            </div>
+            </section>
+        <!-- Navigation -->
+            <nav>
+            <button class="button" onclick="window.location.href='../index.html'">Back</button>   
+            </nav>
+            <br />
+            <!-- Body -->
+            <section id="body">
+            <div class="carousel">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <img src="../images/Goated1.jpeg" class="carousel-img active">
+                <img src="../images/Goated2.jpeg" class="carousel-img">
+                <img src="../images/Goated3.jpeg" class="carousel-img">
+                <img src="../images/Goated4.jpeg" class="carousel-img">
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <div class="inner">
+                <p>Goated is my first solo-app created after the NorthCoders bootcamp.</p>
+                <p>When I graduated from the bootcamp I wanted to spend some time building something personal to me, taking all of the lessons I'd learned since beginning programming 6 months earlier.</p>
+                <p>Part of the tech-stack from my group project had been using web-sockets to facilitate real-time chat between users.  I realised I could use this same component to create rooms and as such I would be able to create something of a multiplayer game.</p>
+                <p>Goated is meant as a companion app for boulderers particularly those that enjoy going to the gym with friends as it allows a host to create a room, which up to 8 other users can join via QR code and an integrated camera.</p>
+                <p>Once in a room, the host can input routes, under which each user records the number of attempts it took them to complete. Once the host ends the session, a score and placing is given, which will be displayed for each user.  The scoring is based on standard bouldering competition rules.</p>
+                <p>While still a work-in-progress, the multiplayer aspect is essentially fully functional.  My next steps will be to create a solo mode, which connects to a database and allows users to track their progress, similar to apps like FitBit.</p>
+            </div>
+            </section>
+    </body>
+</html>
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/carousel.js"></script>
